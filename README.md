@@ -1,1 +1,1 @@
-https://github.com/OttoMeyer/rsschool-cv/cv
+https://ottomeyer.github.io/rsschool-cv/cv
