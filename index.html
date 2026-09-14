@@ -1,12 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>Резюме</title>
 </head>
 <body>
-    <div class="header">Test</div>
+    <header>
+        <div class="row">
+            <div class="column">
+                <h1>Дмитрий Зиновьев</h1>
+                <h2>Контактная информация:</h2>
+                <ul>
+                    <li><b>Email:</b> zinovevdwork@gmail.com</li>
+                    <li><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/dmitrii-zinovev-69305b3aa/">dmitrii-zinovev-69305b3aa</a></li>
+                    <li><b>GitHub:</b> <a href="https://github.com/OttoMeyer">OttoMeyer</a></li>
+                    <li><b>Discord:</b> ottomear</li>
+                </ul>
+            </div>
+            <div class="column">
+                <img class="avatar" src="./me.jpg" alt="my avatar" >
+            </div>
+        </div>
+        <h2>Обо мне:</h2>
+        <p>
+            Трудолюбивый девелопер, который всегда открыт к изучению новых технологий
+            и фреймворков для достижения лучшего результата работаю над проектом.
+            Знаю множество паттернов для решения технических заданий, и активно
+            работаю в команде, чтобы застичь координации от всех членов команды
+            и обмен опыта между людами с разными экспертизами. Изучал искусственный
+            интеллект, мехатронику и робототехнику в университете. Имею обширный опыт
+            с разными языками программирования как
+            <b>С#</b>, <b>Java</b>, <b>C++</b>, <b>GDScript</b>, <b>Python</b>
+        </p>
+        <hr>
+    </header>
+    <main>
+        <h2>Навыки:</h2>
+        <ul>
+            <li><b>Продвинутые знания:</b> C#, ASP.NET, Blazor, Java, Python, GDScript</li>
+            <li><b>Базовые знания::</b> Doker, Bootstrap, C++, SQL, PostgreSql, Assembly, Lua</li>
+        </ul>
+        <h2>Пример кода:</h2>
+        <pre><code>
+        private static List<byte[]> GetData(string path)
+        {
+            // Save Path to files
+            string[] dirs = Directory.GetFiles(path, "*.data");
+
+            // Read and Save all files
+            List<byte[]> data = new List<byte[]>();
+            foreach (string file in dirs)
+            {
+                data.Add(File.ReadAllBytes(file));
+            }
+            return data;
+        }
+        </code></pre>
+        <h2>Опыт работы:</h2>
+        <ul>
+            <li>Веб приложение для менеджмента инвентаря (<a href="https://github.com/OttoMeyer/InventoryApp">source code</a>)</li>
+        </ul>
+        <h2>Образованиe:</h2>
+        <ul>
+            <li><b>РТУ МИРЭА:</b> Мехатроника и Робототехника / <i>2019 - 2022</i></li>
+            <li><b>Itransition:</b> Commercial Software Development — C# / <i>2026</i></li>
+        </ul>
+        <h2>Языки:</h2>
+        <ul>
+            <li><b>Русский:</b> родной</li>
+            <li><b>Английский:</b> 2B (самоучка, практиковал участвуя в групповых проектах с людьми из ранних стран)</li>
+        </ul>
+    </main>
+    <hr>
+    <footer>
+        <div class="row">
+            <div class="column">
+                <p>2026 | <a href="https://github.com/OttoMeyer">My GitHub</a> | <a href="https://app.rs.school/">rs.school</a></p>
+            </div>
+            <div class="column">
+                <img  class="small" src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/refs/heads/master/fullstack-engineering/tasks/cv/assets/rs-school-logo.svg" alt="rs school logo">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
